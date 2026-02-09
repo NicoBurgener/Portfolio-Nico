@@ -1,0 +1,75 @@
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+body {
+    font-size: 20px;
+    display: flex;
+    margin: 0;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #2e7d32; 
+  color: white; 
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: bold;
+}
+
+nav {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 10px;
+    font-weight: bold;
+    background-color: goldenrod;
+    border-radius: 13px;
+}
+
+
+a {
+    color: white;
+    font-size: 110%;
+    text-decoration: none;
+    padding: 5px;
+}
+article{
+    text-align: center; 
+}
+    
+footer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 10px;
+    font-size: 80%;
+    color: white;
+    background-color: goldenrod;
+    border-radius: 13px;
+}
+
+.post-it {
+  background-color: #ffeb3b; /* gelb wie Post-It */
+  color: black;
+  padding: 30px;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 30px;
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 6px 6px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s; /* für Hover-Effekt*/
+  justify-content: center;
+  align-items: center;  
+}
+
+.post-it a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.post-it:hover {
+  transform: translateY(-5px) rotate(-3deg); /* Bewegung bei Hover */
+  cursor: pointer;
+}
+
