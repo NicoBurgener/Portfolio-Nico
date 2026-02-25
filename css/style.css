@@ -4,15 +4,24 @@
 }
 
 body {
+  background-color: #131316;
+   margin: 0;
+   padding: 0;
     font-size: 20px;
     display: flex;
-    margin: 0;
   flex-direction: column;
   min-height: 100vh;
   background-color: #2e7d32; 
   color: white; 
   font-family: 'Comic Sans MS', cursive, sans-serif;
   font-weight: bold;
+}
+
+section {
+  display: grid;
+  place-content: center;
+  align-content: center;
+  min-height: 50vh;
 }
 
 nav {
@@ -32,10 +41,7 @@ a {
     text-decoration: none;
     padding: 5px;
 }
-article{
-    text-align: center; 
-}
-    
+
 footer {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -72,10 +78,17 @@ footer {
   transform: translateY(-5px) rotate(-3deg); /* Bewegung bei Hover */
   cursor: pointer;
 }
+.hidden {
+opacity: 0;
+filter: blur(5px);
+transform: translateX(-100%);
+transition: all 1s;
 
-article {
-  max-width: 900px;   
-    margin: 0 auto;     
-    padding: 20px;  
 }
 
+.show{
+opacity: 1;
+filter: blur(0);
+transform: translateX(0);
+
+}
