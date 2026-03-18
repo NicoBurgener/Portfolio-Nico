@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekte</title>
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="portfolio.js"></script> <!-- defer damit javascribt nach dem das html im body verfügbar ist ausgefürht wird -->
+
 </head>
 <body>
         <header id="wrap">
@@ -16,19 +18,35 @@
             <a href="kontakt.html">Kontakt</a>
         </nav>
     </header>
-           <main>
-            <article>
-                Meine Projekte
-            </article>
+        <main class="container">
+            <section class="project hidden">
+                <h2>Projekt 1 Restaurant</h2>
+              <img src="../bilder/restaurant_real_bild.png" alt="Projekt 1">
+              <div>
+                <p>Das war mein erstes Projekt dabei habe ich HTML und Css gebraucht zudem auch ein bisschen JavaScribt.</p>
+              </div>
+            </section>
 
-            <a href="index.html"><div class="post-it"> Züruck zur Home Seite</div></a>
+            <section class="project hidden">
+                <h2>Projekt 2 2D Adventure Demo</h2>
+             <video controls preload="none" width="800" height="600">
+            <source src="../video/2D_Game.mp4" type="video/mp4">    
+            </video>
+              <div>
+                <p>Das war mein erstes richtiges Projekt mit Java. Ich habe das mit hilfe einer Tutorialreihe gemacht. <br>
+                    Man kann natürlich nocht viel machen.</p>
+              </div>
+            </section>
 
-            <a href="übermich.html"><div class="post-it">Infos über mich</div></a>
-        
-            <a href="skills.html"><div class="post-it">Meine Skills</div></a>
+            <section class="project hidden">
+              <h2>Projekt 3 Restaurant Mund</h2>
+              <img src="../bilder/Mund.Bild.png" alt="Projekt 3">
+              <p>Dieses Projekt ist noch nicht ganz beendet aber bei diesem Projekt finde ich das Design sehr ansprechend und stimmig.</p>
+              <div>
 
-            <a href="kontakt.html"><div class="post-it">Mein Kontakt</div></a>
-       
-    </main>
+                
+              </div>
+            </section>
+        </main>
 </body>
 </html>

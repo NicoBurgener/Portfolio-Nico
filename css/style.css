@@ -1,6 +1,7 @@
 #wrap {
-    width: 1000px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 body {
@@ -11,17 +12,27 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #2e7d32; 
-  color: white; 
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  font-weight: bold;  
+  background-color: #2e7d32;
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.project hidden img,
+.project hidden video {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
 }
 
 section {
@@ -32,31 +43,30 @@ section {
 }
 
 nav {
-    text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    padding: 10px;
-    font-weight: bold;
-    background-color: goldenrod;
-    border-radius: 13px;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 10px;
+  font-weight: bold;
+  background-color: goldenrod;
+  border-radius: 13px;
 }
 
-
 a {
-    color: white;
-    font-size: 110%;
-    text-decoration: none;
-    padding: 5px;
+  color: white;
+  font-size: 110%;
+  text-decoration: none;
+  padding: 5px;
 }
 
 footer {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding: 10px;
-    font-size: 80%;
-    color: white;
-    background-color: goldenrod;
-    border-radius: 13px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 10px;
+  font-size: 80%;
+  color: white;
+  background-color: goldenrod;
+  border-radius: 13px;
 }
 
 .post-it {
@@ -69,10 +79,10 @@ footer {
   margin: 30px;
   display: inline-block;
   border-radius: 8px;
-  box-shadow: 6px 6px 12px rgba(0,0,0,0.2);
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s; /* für Hover-Effekt*/
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
 
 .post-it a {
@@ -86,16 +96,23 @@ footer {
   cursor: pointer;
 }
 .hidden {
-opacity: 0;
-filter: blur(5px);
-transform: translateX(-100%);
-transition: all 1s;
-
+  margin-top: 40px;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-50%);
+  transition: all 1s;
 }
 
-.show{
-opacity: 1;
-filter: blur(0);
-transform: translateX(0);
+.hidden img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 70%;
+  border-radius: 10px;
+}
 
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }

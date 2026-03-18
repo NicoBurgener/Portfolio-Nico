@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
     <link rel="stylesheet" href="css/style.css">
+     <script defer src="portfolio.js"></script> <!-- defer damit javascribt nach dem das html im body verfügbar ist ausgefürht wird -->
 </head>
 <body>
         <header id="wrap">
@@ -18,24 +19,29 @@
         </nav>
     </header>
            <main>
-            <article>
-                Dieses Portfolio wurde im Rahmen eines Schulprojekts erstellt. <br>
-                Bei Rückfragen wenden Sie sich bitte per E-Mail an: <br>
-                <br>
-                E-Mail: nico.burgener@edu.vs.ch <br>
-                <a href="https://github.com/NicoBurgener">Zu meinem GitHub -></a>
-            </article>
+            <div class="container">
+                    <section class="hidden">
+                    Wenn du Fragen zu meinen Projekten hast, mehr über meine Arbeit erfahren möchtest oder an einer Zusammenarbeit interessiert bist, kannst du mich gerne kontaktieren.
+                    </section>
 
-            <a href="index.html"><div class="post-it"> Züruck zur Home Seite</div></a>
+                    <section class="hidden">
+                        Ich freue mich über Nachrichten zu spannenden Projekten, neuen Ideen oder Möglichkeiten zur Zusammenarbeit im Bereich Softwareentwicklung. 
+                        Egal ob es um Webentwicklung, Programmierung oder technische Beratung geht – ich bin immer offen für interessante Gespräche. 
+                    </section>
 
-            <a href="übermich.html"><div class="post-it">Infos über mich</div></a>
-        
-            <a href="skills.html"><div class="post-it">Meine Skills</div></a>
+                     <section class="hidden">
+                        Am besten erreichst du mich per E-Mail oder über berufliche Netzwerke. Ich versuche, auf jede Anfrage zeitnah zu antworten.
+                    </section>
 
-            <a href="projekte.html"><div class="post-it">Meine Projekte</div></a>
-       
-        
-        
+                    <a href="übermich.html" class="post-it">Home</a>
+
+                    <a href="skills.html" class="post-it">Infos über mich</a>
+
+                    <a href="projekte.html" class="post-it">Meine Skills</a>
+
+                    <a href="kontakt.html" class="post-it">Meine Projekte</a>
+
+            </div>
     </main>
 </body>
 </html>
